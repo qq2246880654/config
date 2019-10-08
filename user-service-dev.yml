@@ -8,10 +8,15 @@ sp:
 spring:
   application:
     name: user-service
+  rabbitmq:
+        host: 192.168.180.130
+        port: 5672
+        username: admin
+        password: admin
 server:
   port: 8101
 management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: bus-refresh
