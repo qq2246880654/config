@@ -14,4 +14,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info
+        include: bus-refresh
